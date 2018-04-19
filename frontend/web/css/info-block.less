@@ -1,0 +1,103 @@
+.info-block {
+  text-align: right;
+  margin-bottom: 20px;
+  .time {
+    color: #4A4A4A;
+    font-family: @font-normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 41px;
+    float: left;
+  }
+  a.status-block {
+    cursor: pointer;
+  }
+  .status-block {
+    display: inline-block;
+    text-align: left;
+    outline: none;
+    text-decoration: none;
+    &:nth-child(n+3) {
+      margin-left: 45px;
+    }
+    .img-block {
+      float: left;
+      background-color: @color-red;
+      padding: 6px;
+      border-radius: 50px;
+      text-align: center;
+      display: block;
+      &:before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-size: 20px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .title {
+      color: @color-2;
+      font-family: @font-500;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      white-space: nowrap;
+      margin-left: 50px;
+    }
+    .status-text {
+      color: @color-red;
+      font-family: @font-normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 18px;
+      white-space: nowrap;
+      margin-left: 50px;
+    }
+    &.active {
+      .status-text {
+        color: @color-green;
+      }
+      &.kyc {
+        .img-block {
+          background-color: @color-green;
+          &:before {
+            background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_kycstatus2.svg);
+          }
+        }
+      }
+      &.fa-2 {
+        .img-block {
+          background-color: @color-green;
+          &:before {
+            background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_2fa1.svg);
+          }
+        }
+      }
+    }
+    &.kyc {
+      .img-block {
+        &:before {
+          background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_kycstatus0.svg);
+        }
+      }
+    }
+    &.fa-2 {
+      .img-block {
+        &:before {
+          background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_2fa0.svg);
+        }
+      }
+    }
+    &.user {
+      .img-block {
+        background-color: @color-3;
+        &:before {
+          background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_kyc.svg);
+        }
+      }
+    }
+
+  }
+}

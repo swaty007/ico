@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g fill="none" fill-rule="evenodd" transform="translate(-4 -4)">
+    <circle cx="14" cy="14" r="9.25" stroke="#FFF" stroke-width="1.5"/>
+    <text fill="#FFF" font-family="AktivGroteskApp-Bold, Aktiv Grotesk App" font-size="15" font-weight="bold">
+      <tspan x="10.152" y="19">?</tspan>
+    </text>
+  </g>
+</svg>

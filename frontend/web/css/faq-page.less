@@ -1,0 +1,120 @@
+.token-sale-wrap.faq-page .token-block-wrap {
+  .title {
+    margin-bottom: 20px;
+  }
+  .nav-and-images {
+    margin-top: -10px;
+    li {
+      a {
+        color: @color-3;
+        font-family: @font-500;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 10px 0;
+        transition: 0.3s all;
+        img {
+          width: 36px;
+          height: 36px;
+          margin-right: 20px;
+          float: left;
+          &.bg-images {
+            background: #9b9b9b;
+            padding: 7px 0px;
+            border-radius: 21px;
+            border-width: 0;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+          color: darken(@color-3,15%);
+          img {
+            filter: brightness(80%);
+          }
+        }
+      }
+    }
+  }
+  .white-panel {
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    background-color: @color-1;
+    overflow: hidden;
+    padding: 10.5px;
+      margin-top: 10px;
+    .white-header {
+      color: @color-2;
+      font-family: @font-500;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 22px;
+      text-decoration: none;
+      outline: none;
+      transition: 0.3s all;
+      display: block;
+      &:after {
+        transition: 0.3s all;
+        content: url(../images/ic_expand.svg);
+        float: right;
+        transform: rotate(-180deg);
+      }
+      &:hover {
+
+      }
+      &.collapsed {
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+    .white-body {
+      a {
+        color: @color-3;
+        font-weight: 500;
+        font-family: @font-500;
+        font-size: 15px;
+        line-height: 20px;
+        outline: none;
+        text-decoration: none;
+        &:hover {
+          color: darken(@color-3,10%);
+        }
+      }
+      .white-strong {
+        color: @color-2;
+        font-family: @font-500;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+      .white-text {
+        color: @color-2;
+        font-family: @font-normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          span {
+            color: @color-2;
+            font-family: @font-normal;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 5px;
+          }
+        }
+        &.line-through {
+          li {
+            font-weight: 500;
+            font-family: @font-500;
+            text-decoration:line-through;
+            color: #9B9B9B!important;
+          }
+        }
+      }
+    }
+  }
+}

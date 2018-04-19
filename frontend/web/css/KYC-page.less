@@ -1,0 +1,93 @@
+.token-sale-wrap.KYC-page .token-block-wrap {
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .text-red {
+    color: @color-red;
+    font-family: @font-500;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+    @media (max-width:991px) {
+      text-align: center;
+    }
+  }
+  .site-login {
+    background: none;
+    padding: 0;
+    min-height: 0;
+  }
+  .info-verification {
+    text-align: center;
+    .img-block {
+      padding: 27px 30px;
+      background-color: #CFCFCF;
+      display: inline-block;
+      border-radius: 100px;
+      margin-bottom: 36px;
+      margin-top: 80px;
+      &:before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 66px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/ic_kycstatus2.svg);
+      }
+    }
+    .status-text {
+      color: #4A4A4A;
+      font-family: @font-500;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .text {
+      color: #4A4A4A;
+      font-family: @font-500;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      a {
+        text-decoration: none;
+        outline: none;
+        color: @color-3;
+        &:hover {
+          color: darken(@color-3,15%);
+        }
+      }
+    }
+    &.fail-v {
+      .img-block {
+        background-color: @color-red;
+        &:before {
+          background-image: url(../images/ic_kycstatus0.svg);
+        }
+      }
+      .status-text {
+        margin-bottom: 40px;
+        color: @color-red;
+      }
+    }
+    &.success-v {
+      .img-block {
+        background-color: @color-green;
+        &:before {
+          background-image: url(../images/ic_kycstatus2.svg);
+        }
+      }
+      .status-text {
+        margin-bottom: 40px;
+        color: @color-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.token-sale-wrap.profile-page .token-block-wrap {
+  .control-label {
+    color: #4A4A4A;
+    font-family: @font-500;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .main-cancel {
+    margin-right: 20px;
+  }
+  .text-red {
+    color: @color-red;
+    font-family: @font-500;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    //margin-bottom: 28px;
+    @media(max-width:991px) {
+      padding-left: 60px;
+    }
+  }
+  .red-btn {
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .input-text-simulation {
+    color: @color-2;
+    font-family: @font-normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #CFCFCF;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .img-group {
+    position: relative;
+    padding-left: 58px;
+    img {
+      position: absolute;
+      width: 38px;
+      left: 0;
+    }
+  }
+  .image-sec-block {
+    margin-bottom: 10px;
+    @media(max-width:991px) {
+      float: left;
+      margin-right: 20px;
+    }
+    &.fa2-disabled {
+      .img-block {
+        background-color: @color-red;
+        &:before {
+          background-image: url(../images/ic_kycstatus0.svg);
+        }
+      }
+    }
+    .img-block {
+      background-color: @color-green;
+      padding: 6px;
+      border-radius: 50px;
+      text-align: center;
+      display: block;
+      width: 40px;
+      &:before {
+        background-image: url(../images/ic_kycstatus2.svg);
+        background-size: 20px auto;
+        content: "";
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      @media (max-width:991px) {
+        margin: 0 auto 20px;
+        display: block;
+      }
+    }
+  }
+}
