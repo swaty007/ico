@@ -21,11 +21,16 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link href="/frontend/web/css/main.less" rel="stylesheet/less" type="text/css">
+<!--    <link href="/frontend/web/css/main.less" rel="stylesheet/less" type="text/css">-->
+    <script>
+        less = {
+//            relativeUrls: true,
+            rootpath: "/web/"
+        };
+    </script>
 </head>
 <body>
 <?php $this->beginBody() ?>
-
 
 <div class="container-fluid">
     <div class="row row-eq-height">
