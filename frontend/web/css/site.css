@@ -1,0 +1,2346 @@
+@font-face {
+    font-family: 'Aktiv Grotesk App';
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Lt.ttf);
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Lt.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Aktiv Grotesk App';
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Rg.ttf);
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Rg.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Aktiv Grotesk App';
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Md.ttf);
+    src: url(/css/icocabinetfont/AktivGrotesk_A_Md.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea,
+.form-control {
+    border: 1px solid #CFCFCF;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    height: 42px;
+    color: #000000;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-shadow: none!important;
+}
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder,
+.form-control::placeholder {
+    color: #9B9B9B;
+}
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.form-control:focus {
+    border: 1px solid #225BAB;
+    box-shadow: none;
+}
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-image: url(/images/ic_picker.svg);
+}
+.amount-control {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: right;
+}
+.amount-control ~ .form-control {
+    padding-right: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: 500;
+}
+p {
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group.no-label {
+    margin-top: 25px;
+}
+.main-btn {
+    border-radius: 3px;
+    background-color: #225BAB;
+    padding: 9px 45px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #225BAB;
+    transition: 0.3s all;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+}
+.main-btn:hover {
+    background-color: #1a4480;
+    color: #ffffff;
+    text-decoration: none;
+}
+.red-btn {
+    border-radius: 3px;
+    background-color: #EE3C51;
+    padding: 9px 20px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #EE3C51;
+    transition: 0.3s all;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+}
+.red-btn:hover {
+    background-color: #e3142c;
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-cancel {
+    border-radius: 3px;
+    background-color: #9B9B9B;
+    padding: 9px 45px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #9B9B9B;
+    transition: 0.3s all;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+}
+.main-cancel.grey {
+    color: #4A4A4A;
+}
+.main-cancel:hover {
+    background-color: #828282;
+}
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    outline: none;
+    z-index: 1;
+    transition: 0.3s all;
+}
+.back-btn:before {
+    content: url(/images/ic_back.svg);
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+.back-btn span {
+    text-decoration: none;
+    outline: none;
+}
+.back-btn:hover,
+.back-btn:focus,
+.back-btn:active {
+    color: #828282;
+    text-decoration: none;
+}
+.back-btn:hover:before,
+.back-btn:focus:before,
+.back-btn:active:before {
+    filter: brightness(50%);
+}
+.close-btn {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    background-color: #FAFAFA;
+    padding: 20px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+.close-btn:before {
+    content: url(/images/ic_close.svg);
+    display: block;
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+}
+.close-btn:hover {
+    box-shadow: 0 2px 20px 8px rgba(0, 0, 0, 0.26);
+    background-color: #225BAB;
+}
+.close-btn:hover:before {
+    filter: grayscale(100%) brightness(280%);
+}
+@media (max-width: 991px) {
+    .close-btn {
+        position: static;
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 54px;
+    }
+}
+.has-error .form-control {
+    border-color: #EE3C51;
+}
+.has-error .help-block {
+    color: #EE3C51;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+}
+.content-wrap {
+    background-color: #EFEFEF;
+    padding: 20px 0 40px;
+    overflow: hidden;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .content-wrap {
+        min-height: 100vh;
+        padding: 20px 40px 150px;
+    }
+}
+@media (min-width: 1200px) {
+    .content-wrap {
+        min-height: 100vh;
+        padding: 20px 60px 150px;
+    }
+}
+.open .caret {
+    transform: rotate(180deg);
+}
+.open .caret-alex {
+    transform: rotate(180deg);
+}
+.slick-list {
+    padding: 5px 0;
+}
+.slick-initialized .slick-slide {
+    margin: 0 10px;
+    min-width: 100px;
+}
+.slider-fix > .tab-pane {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.slider-fix > .active {
+    height: auto;
+    overflow: visible;
+}
+.slider-fix .slick-initialized .slick-slide {
+    padding-bottom: 65px;
+}
+.slider-fix .slick-initialized .slick-slide .footer-slide {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+@media (min-width: 991px) {
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+.slick-arrow {
+    position: absolute;
+    border-radius: 50px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s all;
+    padding: 15px;
+    font-size: 0;
+    border: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.26);
+}
+.slick-arrow.slick-prev {
+    left: -15px;
+}
+.slick-arrow.slick-prev:before {
+    content: url(/images/ic_forward.svg);
+    transform: rotate(-180deg);
+}
+.slick-arrow.slick-next {
+    right: -15px;
+}
+.slick-arrow.slick-next:before {
+    content: url(/images/ic_forward.svg);
+}
+.slick-arrow:before {
+    display: inline-block;
+    vertical-align: baseline;
+    height: 16px;
+    width: 18px;
+}
+.slick-arrow:hover:before {
+    filter: brightness(50%);
+}
+.modal.modal-main .close-btn {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    margin: 0;
+}
+.modal.modal-main .modal-dialog {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    left: 0;
+    right: 0;
+}
+.modal.modal-main .modal-dialog .modal-content {
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal.modal-main .modal-dialog .modal-content .modal-header {
+    border: none;
+    padding: 20px 20px 0;
+}
+.modal.modal-main .modal-dialog .modal-content .modal-header .modal-title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+}
+.modal.modal-main .modal-dialog .modal-content .modal-body {
+    padding: 20px;
+}
+.modal.modal-main .modal-dialog .modal-content .modal-body .modal-text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.modal.modal-main .modal-dialog .modal-content .modal-body .main-cancel {
+    margin-bottom: 20px;
+}
+.alert-purchase.alert {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.26);
+    border: none;
+    background-color: #ffffff;
+}
+.alert-purchase.alert .close {
+    color: #225BAB;
+    outline: none;
+}
+.alert-purchase.alert .close:before {
+    content: url(/images/ic_close.svg);
+}
+.alert-purchase.alert .alert-title {
+    color: #225BAB;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.alert-purchase.alert .alert-text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.alert-purchase.alert .alert-text span {
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: bold;
+}
+.alert-purchase.alert .alert-sub-text {
+    margin-top: 6px;
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.navbar-adaptive {
+    background-color: #225BAB;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    min-height: 68px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-adaptive .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-adaptive .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-adaptive .navbar-header .collapse,
+    .navbar-adaptive .navbar-toggle {
+        display: block !important;
+    }
+    .navbar-adaptive .navbar-header {
+        float: none;
+    }
+    .navbar-adaptive .navbar-nav {
+        float: none!important;
+    }
+    .navbar-adaptive .navbar-nav > li {
+        float: none;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-adaptive {
+        background-color: #ffffff;
+    }
+    .navbar-adaptive.opened {
+        background-color: #225BAB;
+    }
+    .navbar-adaptive .navbar-nav {
+        margin: 10px 0;
+    }
+}
+.navbar-adaptive .navbar-brand {
+    float: right;
+    height: 68px;
+    padding: 14px 20px;
+}
+.navbar-adaptive .navbar-brand img {
+    height: 100%;
+}
+.navbar-adaptive .navbar-collapse {
+    border-top: 0;
+    box-shadow: none;
+}
+@media (min-width: 991px) {
+    .navbar-adaptive {
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 130px;
+    }
+    .navbar-adaptive .navbar-collapse {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navbar-adaptive .navbar-header {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        display: block;
+        right: 0;
+    }
+    .navbar-adaptive .navbar-header .navbar-brand {
+        height: 80px;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar-adaptive .navbar-header .navbar-brand img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-fit: cover;
+    }
+    .navbar-adaptive ul {
+        width: 100%;
+    }
+    .navbar-adaptive ul li {
+        float: none;
+        text-align: left;
+    }
+}
+.navbar-adaptive ul li {
+    text-align: left;
+}
+.navbar-adaptive ul li a {
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 0 10px 40px;
+    opacity: 0.6;
+    transition: 0.3s all;
+    white-space: nowrap;
+}
+.navbar-adaptive ul li a:hover,
+.navbar-adaptive ul li a:focus,
+.navbar-adaptive ul li a.active {
+    background-color: transparent;
+    opacity: 1;
+}
+.navbar-adaptive ul li a img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-adaptive ul li.divider-line {
+    border-top: 1px solid #ffffff;
+    opacity: 0.2;
+    margin: 10px 0;
+}
+.navbar-adaptive ul li.dropdown {
+    outline: none;
+    background-color: #1a4480 !important;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navbar-adaptive ul li.dropdown .dropdown-toggle {
+    padding: 0 20px;
+    line-height: 32px;
+    background-color: transparent;
+}
+.navbar-adaptive ul li.dropdown .dropdown-toggle:before {
+    content: url(/images/ic_picker.svg);
+    float: right;
+    filter: brightness(300%);
+}
+@media (max-width: 991px) {
+    .navbar-adaptive ul li.dropdown .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+.navbar-adaptive .navbar-footer {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    right: 15px;
+}
+.navbar-adaptive .navbar-footer ul li a {
+    padding: 10px 0 10px 0;
+}
+.navbar-adaptive #menu-btn {
+    width: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    z-index: 5;
+}
+.navbar-adaptive #menu-btn:before {
+    content: url(/images/ic_mobilemenu.svg);
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+.navbar-adaptive #menu-btn:not(.collapsed) {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    left: unset;
+    right: 20px;
+    top: 16px;
+}
+.navbar-adaptive #menu-btn:not(.collapsed):before {
+    content: url(/images/ic_closewhite.svg);
+    width: 25px;
+    height: 16px;
+}
+.navbar-adaptive #menu-btn:not(.collapsed) ~ .navbar-brand {
+    display: none;
+}
+.navbar-adaptive #menu-btn:not(.collapsed) ~ .status-block {
+    display: inline-block;
+}
+.navbar-adaptive #menu-btn:not(.collapsed) span {
+    background-color: #ffffff;
+    width: 20px;
+}
+.navbar-adaptive #menu-btn span {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    .navbar-adaptive #menu-btn {
+        margin-left: 20px;
+    }
+}
+.navbar-adaptive .status-block {
+    display: none;
+    text-align: left;
+    height: 80px;
+    padding-top: 16px;
+    padding-left: 5px;
+}
+.navbar-adaptive .status-block .img-block {
+    float: left;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+}
+.navbar-adaptive .status-block .img-block:before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-size: 20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(http://ico.infinitum.tech/frontend/web/images/ic_kyc.svg);
+    filter: brightness(0);
+}
+.navbar-adaptive .status-block .title {
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+.navbar-adaptive .status-block .status-text {
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+.info-block {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.info-block .time {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 41px;
+    float: left;
+}
+.info-block a.status-block {
+    cursor: pointer;
+}
+.info-block .status-block {
+    display: inline-block;
+    text-align: left;
+    outline: none;
+    text-decoration: none;
+}
+.info-block .status-block:nth-child(n+3) {
+    margin-left: 45px;
+}
+.info-block .status-block .img-block {
+    float: left;
+    background-color: #EE3C51;
+    padding: 6px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+}
+.info-block .status-block .img-block:before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-size: 20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info-block .status-block .title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+.info-block .status-block .status-text {
+    color: #EE3C51;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+.info-block .status-block.active .status-text {
+    color: #38CE1B;
+}
+.info-block .status-block.active.kyc .img-block {
+    background-color: #38CE1B;
+}
+.info-block .status-block.active.kyc .img-block:before {
+    background-image: url(/images/ic_kycstatus2.svg);
+}
+.info-block .status-block.active.fa-2 .img-block {
+    background-color: #38CE1B;
+}
+.info-block .status-block.active.fa-2 .img-block:before {
+    background-image: url(/images/ic_2fa1.svg);
+}
+.info-block .status-block.kyc .img-block:before {
+    background-image: url(/images/ic_kycstatus0.svg);
+}
+.info-block .status-block.fa-2 .img-block:before {
+    background-image: url(/images/ic_2fa0.svg);
+}
+.info-block .status-block.user .img-block {
+    background-color: #225BAB;
+}
+.info-block .status-block.user .img-block:before {
+    background-image: url(/images/ic_kyc.svg);
+}
+.token-sale-wrap.KYC-page .token-block-wrap .title {
+    margin-bottom: 20px;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .text-red {
+    color: #EE3C51;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.KYC-page .token-block-wrap .text-red {
+        text-align: center;
+    }
+}
+.token-sale-wrap.KYC-page .token-block-wrap .site-login {
+    background: none;
+    padding: 0;
+    min-height: 0;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification {
+    text-align: center;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .img-block {
+    padding: 27px 30px;
+    background-color: #CFCFCF;
+    display: inline-block;
+    border-radius: 100px;
+    margin-bottom: 36px;
+    margin-top: 80px;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .img-block:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 66px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/ic_kycstatus2.svg);
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .status-text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .text a {
+    text-decoration: none;
+    outline: none;
+    color: #225BAB;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification .text a:hover {
+    color: #15396b;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.fail-v .img-block {
+    background-color: #EE3C51;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.fail-v .img-block:before {
+    background-image: url(/images/ic_kycstatus0.svg);
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.fail-v .status-text {
+    margin-bottom: 40px;
+    color: #EE3C51;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.success-v .img-block {
+    background-color: #38CE1B;
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.success-v .img-block:before {
+    background-image: url(/images/ic_kycstatus2.svg);
+}
+.token-sale-wrap.KYC-page .token-block-wrap .info-verification.success-v .status-text {
+    margin-bottom: 40px;
+    color: #38CE1B;
+}
+.token-sale-wrap.profile-page .token-block-wrap .control-label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.token-sale-wrap.profile-page .token-block-wrap .main-cancel {
+    margin-right: 20px;
+}
+.token-sale-wrap.profile-page .token-block-wrap .text-red {
+    color: #EE3C51;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.profile-page .token-block-wrap .text-red {
+        padding-left: 60px;
+    }
+}
+.token-sale-wrap.profile-page .token-block-wrap .red-btn {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.token-sale-wrap.profile-page .token-block-wrap .input-text-simulation {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #CFCFCF;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.token-sale-wrap.profile-page .token-block-wrap .img-group {
+    position: relative;
+    padding-left: 58px;
+}
+.token-sale-wrap.profile-page .token-block-wrap .img-group img {
+    position: absolute;
+    width: 38px;
+    left: 0;
+}
+.token-sale-wrap.profile-page .token-block-wrap .image-sec-block {
+    margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.profile-page .token-block-wrap .image-sec-block {
+        float: left;
+        margin-right: 20px;
+    }
+}
+.token-sale-wrap.profile-page .token-block-wrap .image-sec-block.fa2-disabled .img-block {
+    background-color: #EE3C51;
+}
+.token-sale-wrap.profile-page .token-block-wrap .image-sec-block.fa2-disabled .img-block:before {
+    background-image: url(/images/ic_kycstatus0.svg);
+}
+.token-sale-wrap.profile-page .token-block-wrap .image-sec-block .img-block {
+    background-color: #38CE1B;
+    padding: 6px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    width: 40px;
+}
+.token-sale-wrap.profile-page .token-block-wrap .image-sec-block .img-block:before {
+    background-image: url(/images/ic_kycstatus2.svg);
+    background-size: 20px auto;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.profile-page .token-block-wrap .image-sec-block .img-block {
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+.token-sale-wrap.faq-page .token-block-wrap .title {
+    margin-bottom: 20px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images {
+    margin-top: -10px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images li a {
+    color: #225BAB;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 0;
+    transition: 0.3s all;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images li a img {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    float: left;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images li a img.bg-images {
+    background: #9b9b9b;
+    padding: 7px 0px;
+    border-radius: 21px;
+    border-width: 0;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images li a:hover {
+    background-color: transparent;
+    color: #15396b;
+}
+.token-sale-wrap.faq-page .token-block-wrap .nav-and-images li a:hover img {
+    filter: brightness(80%);
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel {
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10.5px;
+    margin-top: 10px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-header {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s all;
+    display: block;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-header:after {
+    transition: 0.3s all;
+    content: url(/images/ic_expand.svg);
+    float: right;
+    transform: rotate(-180deg);
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-header.collapsed:after {
+    transform: rotate(0);
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body a {
+    color: #225BAB;
+    font-weight: 500;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    outline: none;
+    text-decoration: none;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body a:hover {
+    color: #1a4480;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body .white-strong {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body .white-text {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body ul li span {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+.token-sale-wrap.faq-page .token-block-wrap .white-panel .white-body ul.line-through li {
+    font-weight: 500;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    text-decoration: line-through;
+    color: #9B9B9B!important;
+}
+.token-sale-wrap.history-page .token-block-wrap ul.nav-tabs-pay {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 991px) {
+    .token-sale-wrap.history-page .token-block-wrap .tab-cur-content {
+        margin: 0 -20px;
+        overflow: hidden;
+    }
+}
+.token-sale-wrap.history-page .token-block-wrap table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+.token-sale-wrap.history-page .token-block-wrap table thead tr {
+    background-color: #D8D8D8;
+}
+.token-sale-wrap.history-page .token-block-wrap table thead tr th {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 5px;
+    border: 0;
+    vertical-align: middle;
+}
+@media (min-width: 1200px) {
+    .token-sale-wrap.history-page .token-block-wrap table thead tr th {
+        padding: 10px;
+    }
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr {
+    border-top: 1px solid #CFCFCF;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr td {
+    border: 0;
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+@media (min-width: 1200px) {
+    .token-sale-wrap.history-page .token-block-wrap table tbody tr td {
+        padding: 10px;
+    }
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr .type {
+    color: #9B9B9B;
+    white-space: nowrap;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr .type img {
+    width: 14px;
+    max-height: 14px;
+    margin-right: 14px;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr .received {
+    font-weight: 500;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr .hash {
+    color: #225BAB;
+}
+@media (max-width: 1200px) and (min-width: 991px) {
+    .token-sale-wrap.history-page .token-block-wrap table tbody tr .hash span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 145px;
+        display: inline-block;
+    }
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr:last-child {
+    border-bottom: 1px solid #CFCFCF;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr.success-st .status {
+    color: #38CE1B;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr.fail-st .status {
+    color: #EE3C51;
+}
+.token-sale-wrap.history-page .token-block-wrap table tbody tr.processing-st .status {
+    color: #9B9B9B;
+}
+@media (min-width: 991px) {
+    .token-sale-wrap.history-page .token-block-wrap table td:first-child,
+    .token-sale-wrap.history-page .token-block-wrap table th:first-child {
+        padding-left: 20px;
+    }
+    .token-sale-wrap.history-page .token-block-wrap table td:last-child,
+    .token-sale-wrap.history-page .token-block-wrap table th:last-child {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.history-page .token-block-wrap table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        display: none;
+    }
+    .token-sale-wrap.history-page .token-block-wrap table tr {
+        display: block;
+    }
+    .token-sale-wrap.history-page .token-block-wrap table td {
+        display: block;
+        text-align: right;
+        padding: 10px 20px;
+    }
+    .token-sale-wrap.history-page .token-block-wrap table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+.token-sale-wrap.history-page .token-block-wrap .paging_simple_numbers {
+    margin-top: 40px;
+}
+.token-sale-wrap.history-page .token-block-wrap .paging_simple_numbers .paginate_button {
+    border-radius: 3px;
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+    color: #4A4A4A;
+    width: 41px;
+    line-height: 37px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 9px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.token-sale-wrap.history-page .token-block-wrap .paging_simple_numbers .paginate_button.current {
+    border: 1px solid #225BAB;
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.token-sale-wrap.history-page .token-block-wrap .paging_simple_numbers .paginate_button:hover {
+    text-decoration: none;
+    border: 1px solid #225BAB;
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.token-sale-wrap.security-page .token-block-wrap .title {
+    margin-bottom: 30px;
+}
+.token-sale-wrap.security-page .token-block-wrap .image-sec-block.fa2-disabled .img-block {
+    background-color: #EE3C51;
+}
+.token-sale-wrap.security-page .token-block-wrap .image-sec-block.fa2-disabled .img-block:before {
+    background-image: url(/images/ic_2fa0.svg);
+}
+.token-sale-wrap.security-page .token-block-wrap .image-sec-block .img-block {
+    background-color: #38CE1B;
+    padding: 6px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.token-sale-wrap.security-page .token-block-wrap .image-sec-block .img-block:before {
+    background-image: url(/images/ic_2fa1.svg);
+    background-size: 20px auto;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.security-page .token-block-wrap .image-sec-block .img-block {
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur {
+    margin-left: 60px;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-red {
+    color: #EE3C51;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-black {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-secur {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-secur a {
+    color: #225BAB;
+    text-decoration: none;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-secur a:hover {
+    color: #15396b;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-secur p.num {
+    float: left;
+}
+.token-sale-wrap.security-page .token-block-wrap .text-block-secur .text-secur span {
+    margin-left: 40px;
+    display: block;
+}
+.token-sale-wrap.security-page .token-block-wrap .secure-form {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+@media (min-width: 991px) {
+    .token-sale-wrap.security-page .token-block-wrap .secure-form {
+        margin-left: 100px;
+    }
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.security-page .token-block-wrap .secure-form {
+        margin-bottom: 20px;
+    }
+}
+.token-sale-wrap.security-page .token-block-wrap .secure-form .main-btn {
+    margin-left: -15px;
+    width: calc(100% + 15px);
+    padding-left: 0;
+    padding-right: 0;
+}
+.token-sale-wrap.security-page .token-block-wrap .qr-code-block .title-qr {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.token-sale-wrap.security-page .token-block-wrap .qr-code-block .img-block {
+    height: 240px;
+    width: auto;
+    max-width: 240px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.security-page .token-block-wrap .qr-code-block .img-block {
+        margin: 0 auto;
+    }
+}
+.token-sale-wrap.security-page .token-block-wrap .qr-code-block .img-block img {
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap.security-page .token-block-wrap .main-btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+.help-center-page .token-block-wrap {
+    min-height: calc(100vh - 210px);
+}
+.help-center-page .fade {
+    visibility: hidden;
+}
+@media (max-width: 991px) {
+    .help-center-page .fade {
+        max-height: 0;
+        padding: 0;
+    }
+    .help-center-page .fade > div {
+        display: none;
+    }
+    .help-center-page .fade.in {
+        max-height: max-content;
+        padding: 60px 0;
+    }
+    .help-center-page .fade.in > div {
+        display: block;
+    }
+}
+.help-center-page .fade.in {
+    height: auto;
+    visibility: visible;
+}
+.help-center-page ul.nav-tabs-help {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+}
+.help-center-page ul.nav-tabs-help li {
+    position: static;
+    margin: 0;
+    display: block;
+    width: auto;
+}
+@media (min-width: 991px) {
+    .help-center-page ul.nav-tabs-help li {
+        display: table-cell;
+        width: 1%;
+    }
+}
+.help-center-page ul.nav-tabs-help li.active a.tab-btn {
+    border: 1px solid #225BAB;
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.help-center-page ul.nav-tabs-help li.active a.tab-btn:hover {
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.help-center-page ul.nav-tabs-help li > a.tab-btn {
+    padding: 16.5px;
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    transition: 0.3s all;
+    outline: none;
+    border-radius: 0;
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+.help-center-page ul.nav-tabs-help li > a.tab-btn span.num {
+    line-height: 46px;
+    font-size: 36px;
+    display: block;
+}
+@media (max-width: 991px) {
+    .help-center-page ul.nav-tabs-help li > a.tab-btn {
+        margin-bottom: 20px;
+        border-right: 1px solid #D8D8D8;
+    }
+}
+.help-center-page ul.nav-tabs-help li > a.tab-btn:hover {
+    background-color: #ffffff;
+    color: #9B9B9B;
+}
+@media (min-width: 992px) {
+    .help-center-page ul.nav-tabs-help li:last-child {
+        border-right: 1px solid #D8D8D8;
+    }
+}
+.help-center-page .tab-help-content .tab-pane {
+    position: absolute;
+    top: 200%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+@media (max-width: 991px) {
+    .help-center-page .tab-help-content .tab-pane {
+        position: relative;
+    }
+}
+.help-center-page .tab-help-content label.title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.help-center-page .tab-help-content .main-cancel {
+    margin-right: 20px;
+}
+.help-center-page .tab-help-content .grey-form label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.help-center-page .tab-help-content .grey-form input {
+    background-color: #D8D8D8;
+}
+.help-center-page .tab-help-content .help-text .title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 30px;
+    margin-top: 4px;
+}
+.help-center-page .tab-help-content .help-text .text {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+.help-center-page .tab-help-content .waiting-block {
+    text-align: center;
+}
+.help-center-page .tab-help-content .waiting-block .animation {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-right: 30px;
+}
+.help-center-page .tab-help-content .waiting-block .animation .barlittle {
+    background-color: #225BAB;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    opacity: 0.1;
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-animation: move 1s infinite linear;
+    -webkit-animation: move 1s infinite linear;
+    border-radius: 50px;
+}
+.help-center-page .tab-help-content .waiting-block .animation .barlittle:nth-child(1) {
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+}
+.help-center-page .tab-help-content .waiting-block .animation .barlittle:nth-child(2) {
+    margin-left: 18px;
+    -moz-animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+.help-center-page .tab-help-content .waiting-block .animation .barlittle:nth-child(3) {
+    margin-left: 18px;
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
+@-moz-keyframes move {
+    0% {
+        -moz-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: scale(0.7);
+        opacity: 0.1;
+    }
+}
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.7);
+        opacity: 0.1;
+    }
+}
+.help-center-page .tab-help-content .waiting-block .text {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.help-center-page .tab-help-content .input-text-simulation {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: #D8D8D8;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.help-center-page .tab-help-content .QR-code {
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.help-center-page .tab-help-content .tokens-block label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+.help-center-page .tab-help-content .tokens-block .tokens-amount {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+}
+.help-center-page .tab-help-content .tokens-block .address-tok {
+    color: #225BAB;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.help-center-page .tab-help-content .tokens-block .address-tok:hover {
+    color: #1a4480;
+}
+.help-center-page .tab-help-content .tokens-block .ref-tok {
+    float: right;
+    color: #225BAB;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none;
+}
+.help-center-page .tab-help-content .tokens-block .ref-tok:hover {
+    color: #1a4480;
+}
+.help-center-page .tab-help-content .tokens-block .tokens-text {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+}
+.help-center-page .tab-help-content .tokens-block .tokens-text .green {
+    margin-left: 5px;
+    color: #38CE1B;
+}
+.token-sale-wrap .token-block-wrap {
+    padding: 20px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.token-sale-wrap .token-block-wrap:before {
+    display: table;
+    content: " ";
+}
+.token-sale-wrap .token-block-wrap:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.token-sale-wrap .token-block-wrap .title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.token-sale-wrap .token-block-wrap .title.gray {
+    color: #9B9B9B;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap .title.gray {
+        display: inline-block;
+    }
+}
+.token-sale-wrap .token-block-wrap .num-text {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: right;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap .num-text {
+        display: inline-block;
+        float: right;
+    }
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap.two-inputs-wrap .title.gray {
+        display: block;
+    }
+}
+.token-sale-wrap .token-block-wrap.two-inputs-wrap .two-inputs {
+    width: 35%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap.two-inputs-wrap .two-inputs {
+        width: 50%;
+        float: none;
+    }
+    .token-sale-wrap .token-block-wrap.two-inputs-wrap .two-inputs:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .token-sale-wrap .token-block-wrap.two-inputs-wrap .two-inputs {
+        width: 75%;
+    }
+}
+.token-sale-wrap .token-block-wrap.combine-line:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #CFCFCF;
+    display: block;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap.combine-line:before {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        right: 0;
+        top: 50%;
+    }
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap.combine-line > div > div:nth-child(2) {
+        margin-top: 20px;
+    }
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .line {
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 6px;
+    background-color: #CFCFCF;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .line span {
+    border-radius: 0;
+    background-color: #225BAB;
+    text-align: left;
+    height: 6px;
+    display: block;
+    position: relative;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .line span:before {
+    content: attr(data-value);
+    color: #225BAB;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    right: -10%;
+    bottom: 15px;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .line span:after {
+    content: "";
+    box-sizing: border-box;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #ffffff;
+    background-color: #225BAB;
+    display: block;
+    border-radius: 30px;
+    position: absolute;
+    right: -1px;
+    top: -6px;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .price {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .price.active {
+    color: #000000;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .desc {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .balance-block .item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .balance-block .item img {
+    height: 36px;
+    width: 36px;
+    margin: 0 auto 8px auto;
+    display: block;
+}
+.token-sale-wrap .token-block-wrap .line-wrapp .balance-block .item .currency {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+.token-sale-wrap .token-block-wrap .nav-tabs-pay-wrapp {
+    overflow-x: auto;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li {
+    display: table-cell;
+    width: 1%;
+    margin: 0;
+    float: none;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li.active a {
+    border: 1px solid #225BAB;
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li.active a:hover {
+    background-color: #225BAB;
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li a {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    transition: 0.3s all;
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li a:hover {
+    background-color: #D8D8D8;
+}
+.token-sale-wrap .token-block-wrap ul.nav-tabs-pay li:last-child {
+    border-right: 1px solid #D8D8D8;
+}
+.token-sale-wrap .token-block-wrap .tab-cur-content label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+@media (min-width: 991px) {
+    .token-sale-wrap .token-block-wrap .tab-cur-content label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.token-sale-wrap .token-block-wrap .tab-cur-content .amount-control {
+    right: 25px;
+    top: unset;
+    bottom: 30px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap .tab-cur-content .amount-control {
+        bottom: 10px;
+    }
+}
+.token-sale-wrap .token-block-wrap .tab-cur-content .result-text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap .tab-cur-content .result-text {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap .social-group {
+        text-align: center;
+    }
+}
+.token-sale-wrap .token-block-wrap .social-group a {
+    display: inline-block;
+    margin-right: 20px;
+}
+.token-sale-wrap .token-block-wrap .social-group a img {
+    width: 36px;
+    margin-top: 6px;
+}
+.token-sale-wrap .token-block-wrap.subscribe .main-btn {
+    margin-top: 20px;
+}
+@media (min-width: 991px) {
+    .token-sale-wrap .token-block-wrap.subscribe .main-btn {
+        margin-left: -15px;
+        width: calc(100% + 15px);
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+    }
+}
+.token-sale-wrap .token-block-wrap.subscribe .social-group a img {
+    margin-top: 0;
+}
+@media (max-width: 991px) {
+    .token-sale-wrap .token-block-wrap.subscribe .social-group a img {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 991px) {
+    .token-sale-wrap .token-block-wrap.left-m {
+        margin-left: -5px;
+    }
+}
+@media (min-width: 991px) {
+    .token-sale-wrap .token-block-wrap.right-m {
+        margin-right: -5px;
+    }
+}
+.token-sale-wrap .token-block-wrap .title-slide {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+.token-sale-wrap .token-block-wrap .desc-slide {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 90px;
+}
+.token-sale-wrap .token-block-wrap .date-title {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.token-sale-wrap .token-block-wrap .date-text {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.token-sale-wrap .token-block-wrap .timestamp {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+.token-sale-wrap .token-block-wrap.completed .date-title {
+    color: #9B9B9B;
+}
+.token-sale-wrap .token-block-wrap.completed .date-title:before {
+    content: "\e089";
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    font-size: 30px;
+}
+.token-sale-wrap .token-block-wrap.completed .date-text {
+    color: #9B9B9B;
+}
+.token-sale-wrap .token-block-wrap.completed .footer-slide .footer-text {
+    color: #9B9B9B;
+}
+.token-sale-wrap .token-block-wrap.completed .footer-slide .footer-value {
+    color: #9B9B9B;
+}
+.token-sale-wrap .token-block-wrap.current {
+    background-color: #225BAB;
+}
+.token-sale-wrap .token-block-wrap.current .date-title {
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap.current .date-text {
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap.current .footer-slide .footer-text {
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap.current .footer-slide .footer-value {
+    color: #ffffff;
+}
+.token-sale-wrap .token-block-wrap .footer-slide .footer-text {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.token-sale-wrap .token-block-wrap .footer-slide .footer-value {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: right;
+}
+.token-sale-wrap ul.nav-tabs-bonus {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.token-sale-wrap ul.nav-tabs-bonus li {
+    margin: 0;
+    width: 50%;
+}
+.token-sale-wrap ul.nav-tabs-bonus li:first-child {
+    text-align: right;
+}
+.token-sale-wrap ul.nav-tabs-bonus li:last-child {
+    text-align: left;
+}
+.token-sale-wrap ul.nav-tabs-bonus li.active a {
+    color: #000000;
+    background-color: transparent;
+}
+.token-sale-wrap ul.nav-tabs-bonus li a {
+    color: #9B9B9B;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    transition: 0.3s all;
+    outline: none;
+}
+.token-sale-wrap ul.nav-tabs-bonus li a:hover {
+    color: #000000;
+}
+.token-sale-wrap .bonus-items {
+    margin-bottom: 20px;
+}
+.site-login,
+.site-register {
+    background: url(/images/img_bgmain.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    position: relative;
+}
+.site-login .logo-block,
+.site-register .logo-block {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.site-login .logo-block img,
+.site-register .logo-block img {
+    max-height: 80px;
+}
+.site-login form,
+.site-register form {
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .site-login form,
+    .site-register form {
+        border-radius: 0;
+    }
+}
+.site-login .reset-pass,
+.site-register .reset-pass {
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: right;
+}
+.site-login .checkbox-block label,
+.site-register .checkbox-block label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.site-login .checkbox-block label:before,
+.site-register .checkbox-block label:before {
+    content: url(/images/ic_checkbox0.svg);
+    display: block;
+    float: left;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.site-login .checkbox-block input,
+.site-register .checkbox-block input {
+    display: none;
+}
+.site-login .checkbox-block input:checked ~ label:before,
+.site-register .checkbox-block input:checked ~ label:before {
+    content: url(/images/ic_checkbox1.svg);
+}
+.site-login label,
+.site-register label {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+.site-login .recaptcha-block,
+.site-register .recaptcha-block {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.site-login .recaptcha-block > div,
+.site-register .recaptcha-block > div {
+    margin: 0 auto;
+    display: inline-block;
+}
+.site-login h1,
+.site-register h1 {
+    line-height: 26px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.site-login .desc,
+.site-register .desc {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.site-login .text-btn,
+.site-register .text-btn {
+    color: #225BAB;
+    font-weight: 500;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    text-decoration: none;
+    outline: 0;
+}
+.site-login .text-btn:before,
+.site-register .text-btn:before {
+    margin-top: -15px;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #CFCFCF;
+}
+.site-login .text-btn:hover,
+.site-register .text-btn:hover {
+    color: #15396b;
+}
+.site-login .fileContainer,
+.site-register .fileContainer {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    border: 1px solid #CFCFCF;
+    border-radius: 3px;
+    background-color: #CFCFCF;
+}
+.site-login .fileContainer .name-text,
+.site-register .fileContainer .name-text {
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+.site-login .fileContainer .name-text.loaded:after,
+.site-register .fileContainer .name-text.loaded:after {
+    content: url(/images/ic_tik.svg);
+    position: absolute;
+    right: 10px;
+}
+.site-login .fileContainer .select-text,
+.site-register .fileContainer .select-text {
+    color: #ffffff;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100px;
+    text-align: center;
+    width: 100%;
+}
+.site-login .fileContainer img,
+.site-register .fileContainer img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+    opacity: 0.8;
+}
+.site-login .fileContainer [type=file],
+.site-register .fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 0;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+.footer {
+    margin-top: 20px;
+    border-top: 1px solid #CFCFCF;
+    padding-top: 20px;
+}
+@media (min-width: 991px) {
+    .footer {
+        position: absolute;
+        left: 60px;
+        bottom: 40px;
+        right: 60px;
+    }
+}
+@media (max-width: 991px) {
+    .footer {
+        padding: 20px;
+    }
+}
+.footer .title {
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+@media (min-width: 991px) {
+    .footer ul {
+        max-width: calc(100% - 120px);
+    }
+}
+.footer ul li a {
+    padding: 10px 30px 10px 0;
+    color: #4A4A4A;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    outline: none;
+    transition: 0.3s all;
+}
+.footer ul li a:hover {
+    color: #225BAB;
+}
+.footer ul li a:after {
+    content: '•';
+    position: absolute;
+    right: 15px;
+}
+.footer ul li:last-child a:after {
+    content: none;
+}
+.footer .dropdown {
+    background-color: #CFCFCF;
+    border-radius: 3px;
+    padding: 0 30px 0 10px;
+    width: auto;
+    height: 30px;
+}
+@media (min-width: 991px) {
+    .footer .dropdown {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media (max-width: 991px) {
+    .footer .dropdown {
+        width: 120px;
+    }
+}
+.footer .dropdown a.dropdown-toggle {
+    color: #000000;
+    font-family: 'Aktiv Grotesk App', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s all;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-image: url(/images/ic_picker.svg);
+    padding: 5px 20px 5px 10px;
+    display: block;
+}
+.footer .dropdown a.dropdown-toggle:hover {
+    color: #225BAB;
+}
+.footer .dropdown .divider-line {
+    margin: 8px 0;
+}
+.footer .dropdown .dropdown-menu {
+    text-align: center;
+    background-color: #CFCFCF;
+    border-radius: 4px;
+    left: unset;
+    top: unset;
+    right: 110%;
+    bottom: -30px;
+}
+@media (max-width: 991px) {
+    .footer .dropdown .dropdown-menu {
+        right: unset;
+        left: 110%;
+        bottom: -40px;
+    }
+}
+.footer .dropdown .dropdown-menu li a {
+    transition: 0.3s all;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.footer .dropdown .dropdown-menu li a:hover {
+    background-color: transparent;
+    color: #225BAB;
+}
+@media (min-width: 991px) {
+    .footer .dropdown .dropdown-menu:before {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        transition: all 0.3s;
+        border-bottom: 10px solid #CFCFCF;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+    }
+}
